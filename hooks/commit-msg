@@ -1,0 +1,6 @@
+#!/bin/sh
+
+. .git/hooks/env/var
+
+COMMIT_MSG_FILE=$1
+$PYTHON_BIN_PATH/pythonw .git/hooks/bin/conventional-commit.py "$COMMIT_MSG_FILE"
